@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><img src="360_F_128939133_0WXTVdZ1bv1NXusQsdYYJLIwTVoXHqQ7.jpg" width="60" height="60" alt="img"></div>
+            <div class="navlist">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>About</li>
+                    <!-- <li>Contact</li> -->
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="login">
+                
+                <form class="form" action="index.html">
+                    <div  class="loginheader">REGISTER</div>
+                        <div class="username flex">
+                            <input id="username" type="text" required autocomplete="off">
+                            <label for="username" class="label" id="userlabel">Username</label>
+                            <div id="usertick"><img src="checked.png" width="20" height="20" alt=""></div>
+                            <div id="usetick"><img src="exclamation.png" width="20" height="20" alt=""></div>
+                        </div>
+                        
+                        <div class="email flex">
+                            <input id="email" type="text" required autocomplete="off">
+                            <label id="emaillabel" class="label" for="email"> Email   
+                            </label>
+                        </div>
+                        <div class="copass flex">
+                            <input id="copass" type="password" required autocomplete="off">
+                            <label id="copasslabel" class="label" for="copass"> Password   
+                            </label>
+                            <div id="eye"><img src="eye.png" width="20" height="20" alt=""></div>
+                            <div id="eyecross"><img src="hidden.png" width="20" height="20" alt=""></div>
+                            <div id="passwordtick"><img src="checked.png" width="20" height="20" alt=""></div>
+                            <div id="passwordmark"><img src="exclamation.png" width="20" height="20" alt=""></div>
+                        </div>
+                        <div class="minimum" style="display: flex; row-gap: 5px; flex-direction: column;">
+                        <div class="password flex">
+                            <input id="password" type="password" required autocomplete="off">
+                            <label id="passlabel" class="label" for="password">Confirm Password
+                            </label>
+                            <div id="coeye"><img src="eye.png" width="20" height="20" alt=""></div>
+                            <div id="coeyecross"><img src="hidden.png" width="20" height="20" alt=""></div>
+                        </div>
+                        <div class="charac">* 8-14 characters for username & password</div>
+                        </div>
+                        <div class="terms"><div class="check"><input id="checkbox" type="checkbox" name="Remember" >I agree Terms and Conditions & Pivacy Policy</div></div>
+                        <div style="display: flex; flex-direction: column; row-gap: 15px;">
+                            <div style="text-align: center;"><button type="submit">CREATE ACCOUNT</button></div>
+                            <div class="Remember font20">Already have an account ? <a style="text-decoration: underline;" href="login.html">Click here</a></div>
+                        </div>
+                    
+                    
+
+                   
+
+                </form>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

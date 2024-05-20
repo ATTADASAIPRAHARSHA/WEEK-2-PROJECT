@@ -1,0 +1,338 @@
+body{
+    background-image: url("forest-6578551_1920.jpg");
+    background-size: cover;  /* Ensures the background image covers the entire element */
+    background-position: center;  /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents the background image from repeating */
+    /* min-height: 100vh;  Ensures the body element covers at least the viewport height */
+    margin: 0;  /* Removes default margin */
+    padding: 0;
+    height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    -webkit-text-fill-color: black !important;
+    /* transition: background-color infinite ease-in-out 0s; */
+  }
+
+::-webkit-scrollbar-track {
+    background: #898383;  
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;  
+    border-radius: 10px;
+}
+.arrow{
+    background-color: white;
+    border-radius: 10px;
+}
+.navbar{
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+}
+.navlist>ul{
+    display: flex;
+    column-gap: 20px;
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-weight: bold;
+    position: relative;
+}
+li a{
+    color: rgb(255, 255, 255);
+}
+.navlist>ul>li{
+    position: relative;
+    color: white;
+    padding: 5px;
+   
+}
+.navlist>ul>li::before{
+    content: "";
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    /* bottom: 0; */
+    transform: scale(0);
+    transition: transform 0.5s;
+    border-radius: 100%;
+}
+.navlist>ul>li:hover::before{
+    transform: scale(1);
+}
+.logo>img{
+    border-radius: 80px;
+}
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+.hover:hover{
+    text-decoration: underline;
+}
+.login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* text-align: center; */
+    /* margin-left: 125px; */
+    padding: 20px;
+    /* width: 100%; */
+}
+.flex{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.username{
+    position: relative;
+}
+.email{
+    position: relative;
+}
+.copass{
+    position: relative;
+}
+#eye{
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    cursor: pointer;
+    /* display: none; */
+    z-index: 20;
+}
+#eyecross{
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    display: none;
+    cursor: pointer;
+    /* display: none; */
+    z-index: 20;
+}
+#coeye{
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    cursor: pointer;
+    /* display: none; */
+    z-index: 20;
+}
+#coeyecross{
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    display: none;
+    cursor: pointer;
+    /* display: none; */
+    z-index: 20;
+}
+#passwordtick{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    display: none;
+}
+#passwordmark{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    display: none;
+}
+#usertick{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    display: none;
+}
+#usetick{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    display: none;
+}
+#passwordtick{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    display: none;
+}
+.password{
+    position: relative;
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+    background: transparent;
+    z-index: 10;
+    width: 100%;
+}
+input[type='checkbox']{
+    width: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 35px;
+    padding: 25px;
+    padding-left: 35px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 0.1px double rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+label {
+    position: absolute;
+    left: 5px;
+    top: 25%;
+    pointer-events: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+select{
+    margin: 5px;
+    width: 80px;
+    background: transparent;
+    border: none;
+}
+.username input:focus ~ label {
+    top: -25px !important;
+}
+
+.password input:focus ~ label {
+    top: -25px;
+}
+.email input:focus ~ label {
+    top: -25px;
+}
+.copass input:focus ~ label {
+    top: -25px;
+}
+
+
+.Remember{
+    color: white;
+}
+.check{
+    display: flex;
+    align-content: center;
+    font-size: 15px;
+}
+.loginheader{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.section{
+    background: transparent;
+    border: none;
+    border: none;
+    transition: border 0.5s;
+}
+.section:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+button[type='submit']{
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 13px;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+}
+.charac{
+    font-size: 14px;
+}
+.font20{
+    font-size: 20px;
+}
+.font25{
+    font-size: 25px;
+}
+@media (max-width:450px) {
+    #eye{
+        width: 15px;
+        height: 15px;
+    }
+    .logo>img{
+        width: 40px;
+        height: 40px;
+
+    }
+    .navlist>ul{
+        font-size: 20px;
+    }
+    button[type='submit']{
+        font-size: 20px;
+
+    }
+    .loginheader{
+        font-size: 23px;
+    }
+    label{
+        font-size: 17px;
+    }
+    .font20{
+        font-size: 17px;
+    }
+    
+}
+@media (max-width:375px) {
+    .navlist>ul{
+        font-size: 15px;
+    }
+    button[type='submit']{
+        font-size: 17px;
+
+    }
+    label{
+        font-size: 15px;
+    }
+    .loginheader{
+        font-size: 20px;
+    }
+    .font20{
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width:250px) {
+    .navlist>ul{
+        font-size: 10px;
+    }
+    .logo img{
+        width: 24px;
+        height: 24px;
+    }
+    .loginheader{
+        font-size: 20px;
+    }
+    .p{
+        font-size: 15px;
+    }
+}
+@media (min-height:100vh) {
+    body{
+        height: 110vh;
+    }
+    
+}
