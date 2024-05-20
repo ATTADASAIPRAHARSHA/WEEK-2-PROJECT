@@ -257,3 +257,8 @@ input:-webkit-autofill {
         font-size: 15px;
     }
 }
+@media (min-height: 100vh) {
+    body {
+        height: 110vh;
+    }
+}
