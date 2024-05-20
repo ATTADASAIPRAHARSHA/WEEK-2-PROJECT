@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: max(100vh,100%);
     /* width: 100vw; */
     font-family: "Play", sans-serif;
     font-weight: 400;
